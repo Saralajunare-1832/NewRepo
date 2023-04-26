@@ -23,8 +23,10 @@ public class StudentController {
 	}
 
 
+
 	@PostMapping("/add-student")
-	public String addStudent(@RequestBody Student student,Integer num)
+	public String addStudent(@RequestBody Student student,Integer num,String name)
+
 	{    
 	stdService.addstudent(student);  
 	return "Added successfully...";
