@@ -32,7 +32,7 @@ public class StudentController {
 
 
 	@PostMapping ("/add-student")
-	public String addStudent(@RequestBody Student student)  
+	public String addStudent(@RequestBody Student student,String name)
 	{    
 	stdService.addstudent(student);  
 	return "Added successfully...";
