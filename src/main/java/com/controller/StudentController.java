@@ -31,7 +31,7 @@ public class StudentController {
 	}
 
 
-	@RequestMapping(value="/add-student", method=RequestMethod.POST)//@PostMapping    
+	@PostMapping ("/add-student")
 	public String addStudent(@RequestBody Student student)  
 	{    
 	stdService.addstudent(student);  
